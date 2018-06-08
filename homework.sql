@@ -31,6 +31,7 @@ CREATE Database homework;
 CREATE TABLE `malfunction` (
   `id` int(11) NOT NULL,
   `device` varchar(50) NOT NULL,
+  `checkboxes` varchar(50) NOT NULL,
   `description` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

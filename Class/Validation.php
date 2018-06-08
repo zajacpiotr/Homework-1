@@ -25,4 +25,10 @@ class Validation extends DBConfig
         return false;
         }
     }
+     public function makeString($field)
+    {
+        $string = join(',', $field);
+            return $string;
+        
+    }
 }

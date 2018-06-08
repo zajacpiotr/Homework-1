@@ -15,12 +15,13 @@ class Core extends DBConfig
         
         return $stmt;
     }
-    public function insert($device, $description) 
+    public function insert($device, $string, $description) 
     { 
-        $query = "INSERT INTO malfunction (device, description) VALUES(:device, :description)";
+        $query = "INSERT INTO malfunction (device, checkboxes, description) VALUES(:device, :string, :description)";
         
         $stmt = $this->connection->prepare($query);
         $stmt->bindParam(':device', $device, PDO::PARAM_STR);
+        $stmt->bindParam(':string', $string, PDO::PARAM_STR);
         $stmt->bindParam(':description', $description, PDO::PARAM_STR);
         $stmt->execute();
     

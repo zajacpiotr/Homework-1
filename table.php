@@ -11,12 +11,14 @@ echo "<div class='conteinerT'>";
          echo "<tr>";
          echo "<td>ID</td>";
          echo "<td>Device model</td>";
+         echo "<td>Checkboxes</td>";
          echo "<td>Malfunction description</td>";
          echo "</tr>";
     foreach ($read as $key => $res) { 
          echo "<tr>";
          echo "<td>".$res['id']."</td>";
          echo "<td>".$res['device']."</td>";
+         echo "<td>".$res['checkboxes']."</td>";
          echo "<td>".$res['description']."</td>"; 
     }
     echo "</table>";

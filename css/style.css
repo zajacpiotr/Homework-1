@@ -32,3 +32,7 @@ tr:first-of-type {
 td {
     padding: 7px;
 }
+
+.conteinerCh {
+    height: 100px;
+}
