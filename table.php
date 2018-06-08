@@ -6,7 +6,7 @@ $core = new Core();
 $read = $core->readAll();
 
 echo "<div class='conteinerT'>";
-    echo "<h2>Added malfunctions</h2>";
+    echo "<h2>Raported issues</h2>";
     echo "<table>";
          echo "<tr>";
          echo "<td>ID</td>";
